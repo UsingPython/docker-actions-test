@@ -25,5 +25,5 @@ jobs:
       - name: Build and Push to Image
         uses: docker/build-push-action@v2
         with:
-          tags: usingpython/testimage:${{ steps.latesttag.outputs.tag }}
+          tags: ghcr.io/usingpython/testimage:${{ steps.latesttag.outputs.tag }}
           push: true
